@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -18,6 +18,7 @@ header .nav-menu {
   display: flex;
   gap: 33px;
   align-items: center;
+  justify-content: space-between;
 }
 header .nav-text {
   font-family: "Poppins", sans-serif;
@@ -28,6 +29,7 @@ header .nav-text {
 header .btn-nav {
   width: 11.813rem;
   height: 3.75rem;
+  border: 1px solid;
   border-radius: 6px;
   border-color: #16A34A;
   background-color: #16A34A;
@@ -42,29 +44,19 @@ header .btn-nav:hover {
   border-color: #21C05C;
   background-color: #21C05C;
 }
-@media (max-width: 700px) {
-  header .navbar {
-    height: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    transform: none;
-  }
-}
 
 main {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  margin: 4rem auto 0 auto;
-  max-width: 1280px;
 }
 main .main-text {
   display: flex;
 }
 main .main-off {
   display: flex;
+  padding: 100px;
 }
 main .main-primary {
   display: flex;
@@ -128,12 +120,17 @@ main .btn-adquirir {
 }
 main .stats {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #F3F5F8;
-  width: 1182px;
+  width: 100%;
   height: 184px;
   align-items: center;
-  margin-top: 60px;
+  padding: 0 100px 0 100px;
+}
+main .stats-components {
+  display: flex;
+  min-width: 80%;
+  justify-content: space-between;
 }
 main .green-stats {
   font-size: 40px;
@@ -145,4 +142,22 @@ main .sub-stats {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #4B5563;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+  }
+  .nav-img {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .main-off {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
