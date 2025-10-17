@@ -55,9 +55,16 @@ header .btn-nav:hover {
 main {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   margin: 4rem auto 0 auto;
   max-width: 1280px;
+}
+main .main-text {
+  display: flex;
+}
+main .main-off {
+  display: flex;
 }
 main .main-primary {
   display: flex;
@@ -87,17 +94,13 @@ main .main-secondary {
   align-items: center;
   gap: 40px;
 }
-main .icons {
-  width: 24px;
-  height: 24px;
-  color: #FFFFFF;
-}
 main .btn-doar {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 189.81px;
   height: 62px;
+  border: 1px solid;
   border-radius: 6px;
   border-color: #16A34A;
   background-color: #16A34A;
@@ -113,6 +116,7 @@ main .btn-adquirir {
   align-items: center;
   width: 11.813rem;
   height: 3.75rem;
+  border: 1px solid;
   border-radius: 6px;
   border-color: #2563EB;
   background-color: #F3F5F8;
@@ -121,4 +125,24 @@ main .btn-adquirir {
   font-weight: 400;
   color: #2563EB;
   gap: 10px;
+}
+main .stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F3F5F8;
+  width: 1182px;
+  height: 184px;
+  align-items: center;
+  margin-top: 60px;
+}
+main .green-stats {
+  font-size: 40px;
+  color: #16A34A;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+main .sub-stats {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #4B5563;
 }/*# sourceMappingURL=style.css.map */

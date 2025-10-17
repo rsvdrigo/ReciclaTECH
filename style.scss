@@ -70,9 +70,19 @@ header {
 main {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     margin: 4rem auto 0 auto;
     max-width: 1280px;
+
+    .main-text {
+        display: flex;
+
+    }
+
+    .main-off {
+        display: flex;
+    }
 
     .main-primary {
         display: flex;
@@ -109,19 +119,13 @@ main {
         gap: 40px;
     }
 
-    .icons {
-        width: 24px;
-        height: 24px;
-        color: #FFFFFF;
-    }
-
-
     .btn-doar {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 189.81px;
         height: 62px;
+        border: 1px solid;
         border-radius: 6px;
         border-color: #16A34A;
         background-color: #16A34A;
@@ -130,6 +134,7 @@ main {
         font-weight: 400;
         color: #FFFFFF;
         gap: 10px;
+        
 
     }
 
@@ -139,6 +144,7 @@ main {
         align-items: center;
         width: 11.813rem;
         height: 3.75rem;
+        border: 1px solid;
         border-radius: 6px;
         border-color: #2563EB;
         background-color: #F3F5F8;
@@ -147,6 +153,30 @@ main {
         font-weight: 400;
         color: #2563EB;
         gap: 10px;
+        
     }
 
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        background-color: #F3F5F8;
+        width: 1182px;
+        height: 184px;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .green-stats {
+        font-size: 40px;
+        color: #16A34A;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+
+    }
+    .sub-stats{
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        color: #4B5563;
+
+    }
 }
