@@ -1,122 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  list-style: none;
   text-decoration: none;
 }
 
-header .navbar {
+header {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #B4AEAE;
+  align-items: center;
   padding: 0 1rem 1rem 0.5rem;
   margin: 2.313rem 1.938rem 0px 2.313rem;
-  border-bottom: solid 1px #b4aeae;
-  align-items: center;
 }
-header .nav-menu {
+header nav {
   display: flex;
   gap: 33px;
-  align-items: center;
-  justify-content: space-between;
-}
-header .nav-text {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #4B5563;
 }
-header .btn-nav {
-  width: 11.813rem;
-  height: 3.75rem;
-  border: 1px solid;
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+header nav ul li {
+  font-size: 16px;
+}
+header nav button {
+  width: 189px;
+  height: 60px;
   border-radius: 6px;
-  border-color: #16A34A;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  gap: 10px;
   background-color: #16A34A;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  border: 1px solid;
   color: #FFFFFF;
-  gap: 10px;
   cursor: pointer;
 }
-header .btn-nav:hover {
-  border-color: #21C05C;
+header nav button:hover {
   background-color: #21C05C;
 }
 
 main {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
 }
-main .main-text {
+main .hero {
   display: flex;
+  align-items: center;
+  margin: 114px 20px 137px 54px;
 }
-main .main-off {
-  display: flex;
-  padding: 100px;
-}
-main .main-primary {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-main .main-primary h1 {
+main .hero h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 3.75rem;
   color: #1F2937;
-  max-width: 42.375rem;
+  font-size: 60px;
+  font-weight: 700;
   line-height: 130%;
+  max-width: 680px;
+  margin-bottom: 25px;
 }
-main .main-primary h4 {
+main .hero h4 {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  max-width: 40rem;
-  color: #4B5563;
+  font-size: 20px;
   line-height: 100%;
-  margin-top: 1rem;
-  margin-bottom: 55px;
+  max-width: 680px;
+  color: #4B5563;
+  font-weight: 400;
+  margin-bottom: 35px;
 }
-main .main-secondary {
+main .hero .hero-btnContainer {
   display: flex;
-  align-items: center;
-  gap: 40px;
+  gap: 43px;
 }
-main .btn-doar {
+main .hero button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 189.81px;
   height: 62px;
-  border: 1px solid;
+  width: 189px;
   border-radius: 6px;
-  border-color: #16A34A;
-  background-color: #16A34A;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
+  line-height: 100%;
+  border: 1px solid;
   gap: 10px;
 }
-main .btn-adquirir {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 11.813rem;
-  height: 3.75rem;
-  border: 1px solid;
-  border-radius: 6px;
+main .hero .hero-btnGreen {
+  background-color: #21C05C;
+  border-color: #21C05C;
+  color: #FFFFFF;
+}
+main .hero .hero-btnBlue {
   border-color: #2563EB;
-  background-color: #F3F5F8;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
   color: #2563EB;
-  gap: 10px;
 }
 main .stats {
   display: flex;
@@ -142,22 +126,4 @@ main .sub-stats {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #4B5563;
-}
-
-@media (max-width: 700px) {
-  .navbar {
-    height: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    transform: none;
-  }
-  .nav-img {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .main-off {
-    display: flex;
-    flex-direction: column;
-  }
 }/*# sourceMappingURL=style.css.map */
