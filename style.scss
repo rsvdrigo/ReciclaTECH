@@ -76,13 +76,14 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+   
 
 
     .hero {
         display: flex;
         align-items: center;
         margin: 114px 20px 137px 54px;
+        justify-content: center;
 
 
 
@@ -146,8 +147,9 @@ main {
         background-color: #F3F5F8;
         width: 100%;
         height: 184px;
+        
         align-items: center;
-        padding: 0 100px 0 100px;
+       
 
 
         .stats-components {
@@ -173,7 +175,110 @@ main {
 
     }
 
+    .how-works{
+        display: flex;        
+        flex-direction: column;
+        margin-top:110px;
+        align-items: center;
 
 
+        .how-worksContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        .how-worksText{
+            display: flex;            
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
 
+            h2{
+                font-family: $font-poppins;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 100%;
+                margin-bottom: 22px;
+                
+              
+            }
+            h3{
+                font-family: $font-inter;
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 150%;
+                margin-bottom: 94px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+
+        .how-workTittleGreen{
+                color: $color-greenPrimary;
+              }  
+
+        .how-workTittleBlue{
+                color: $color-bluePrimary;
+              }  
+
+        .how-worksCardsContainer{
+            display: flex;
+            gap: 22px;
+        }
+
+        .how-worksCards{
+            border-radius: 8px;
+            background-color: #F3F5F8;
+             display: flex;           
+             flex-direction: column;
+            justify-content: center;
+            padding: 40px 0 0 29px;
+            
+
+
+            h3{
+
+                display: flex;
+                align-items: center;
+                font-family: $font-inter;
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 150%;
+                gap: 8px;
+                margin-bottom: 28px;
+            }
+            p{
+                font-family: $font-poppins;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 100%;
+                color: #4B5563;
+            }
+
+            h4{
+                font-family: $font-poppins;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 100%;
+                color: #4B5563;
+            }
+
+            .how-workTittle{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 36px;
+            }
+            .how-worksItens{
+                display: flex;
+                margin-bottom: 45px;
+                
+                
+                
+            }
+            
+        }
+    }
+
+}
 }
