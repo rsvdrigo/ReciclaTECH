@@ -177,7 +177,8 @@ main .how-works .how-worksContainer .how-worksCards {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 20px 0 29px;
+  width: 481px;
+  height: 491px;
 }
 main .how-works .how-worksContainer .how-worksCards h3 {
   display: flex;
@@ -207,10 +208,12 @@ main .how-works .how-worksContainer .how-worksCards .how-workTittle {
   display: flex;
   flex-direction: column;
   margin-bottom: 36px;
+  margin-left: 29px;
 }
 main .how-works .how-worksContainer .how-worksCards .how-worksItens {
   display: flex;
   margin-bottom: 45px;
+  margin-left: 29px;
 }
 main .how-works .how-worksContainer .how-worksCards .how-worksItens .workIcon-green {
   height: 32px;

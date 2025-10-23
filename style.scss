@@ -236,7 +236,8 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 40px 20px 0 29px;
+                width: 481px;
+                height: 491px;
                 
                 
                 h3 {
@@ -271,11 +272,13 @@ main {
                     display: flex;
                     flex-direction: column;
                     margin-bottom: 36px;
+                    margin-left: 29px;
                 }
 
                 .how-worksItens {
                     display: flex;
                     margin-bottom: 45px;
+                    margin-left: 29px;
 
 
                     .workIcon-green {
@@ -376,7 +379,7 @@ main {
                     }
 
                     button{
-                        
+
                     }
                 }
             }
