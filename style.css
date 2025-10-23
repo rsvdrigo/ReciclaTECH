@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -28,20 +28,24 @@ header nav ul {
 header nav ul li {
   font-size: 16px;
 }
+header nav ul li a {
+  color: #000;
+}
+header nav ul li a:hover {
+  color: #16A34A;
+}
 header nav button {
   width: 189px;
   height: 60px;
   border-radius: 6px;
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-left: 30px;
+  padding: 10px 30px;
   gap: 10px;
   background-color: #16A34A;
   font-family: "Poppins", sans-serif;
   border: 1px solid;
   color: #FFFFFF;
   cursor: pointer;
+  font-size: 16px;
 }
 header nav button:hover {
   background-color: #21C05C;
@@ -57,6 +61,7 @@ main .hero {
   align-items: center;
   margin: 114px 20px 137px 54px;
   justify-content: center;
+  gap: 50px;
 }
 main .hero h1 {
   font-family: "Poppins", sans-serif;
@@ -99,12 +104,14 @@ main .hero .hero-btnGreen {
   border-color: #21C05C;
   color: #FFFFFF;
 }
-main .hero .hero-btnGreen:hover {
-  background-color: #16A34A;
-}
 main .hero .hero-btnBlue {
   border-color: #2563EB;
   color: #2563EB;
+  background-color: transparent;
+}
+main .hero img {
+  max-width: 100%;
+  height: auto;
 }
 main .stats {
   display: flex;
@@ -286,6 +293,7 @@ main .products-info .products-container .products-cardsContainer .products-cards
   gap: 33px;
   height: 436px;
   width: 299px;
+  padding: 20px;
 }
 main .products-info .products-container .products-cardsContainer .products-cards h4 {
   font-family: "Inter", sans-serif;
@@ -317,9 +325,14 @@ main .products-info .products-container .products-cardsContainer .products-cards
   line-height: 100%;
   color: #FFFFFF;
   background-color: #16A34A;
+  cursor: pointer;
 }
 main .products-info .products-container .products-cardsContainer .products-cards button:hover {
   background-color: #21C05C;
+}
+main .products-info .products-container .products-cardsContainer .products-cards img {
+  max-width: 100%;
+  height: auto;
 }
 main .talk-about {
   display: flex;
@@ -375,7 +388,7 @@ main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards
   width: 40px;
 }
 main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talk-pRegular {
-  height: 210px;
+  height: auto;
 }
 main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards p {
   font-family: "Poppins", sans-serif;
@@ -384,19 +397,19 @@ main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards
   line-height: 150%;
   color: #4B5563;
   max-width: 230px;
-  height: 250px;
-  padding-left: 40px;
+  height: auto;
+  padding-left: 0;
 }
 main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talkabout-imgstar {
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 0;
 }
 main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talk-aboutCardsInfos {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 0;
   gap: 10px;
 }
 main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talk-aboutCardsInfos .talk-aboutcardsTexts h5 {
@@ -420,7 +433,6 @@ main .make-the-difference {
   padding: 5rem 1.5rem;
   margin-top: 5rem;
   width: 100%;
-  margin: auto;
 }
 main .make-the-difference .make-tittle {
   display: flex;
@@ -440,6 +452,12 @@ main .make-the-difference p {
   line-height: 150%;
   max-width: 600px;
 }
+main .make-the-difference .buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
 main .make-the-difference button {
   height: 44px;
   width: 189px;
@@ -447,6 +465,7 @@ main .make-the-difference button {
   font-family: "Poppins", sans-serif;
   border: 1px solid #16A34A;
   cursor: pointer;
+  font-size: 16px;
 }
 main .make-the-difference .start-now-button {
   background-color: #16A34A;
@@ -463,44 +482,327 @@ main .make-the-difference .know-more-button:hover {
   color: #21C05C;
 }
 
+footer {
+  background-color: #0f172a;
+  color: #d1d5db;
+  padding: 50px 0 20px 0;
+  font-family: "Poppins", sans-serif;
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 30px;
+}
+footer .tags {
+  margin-left: 22px;
+}
+footer .tags-logo {
+  margin-left: 20px;
+}
+footer .logo-text {
+  max-width: 200px;
+}
+footer .social-text {
+  max-width: 200px;
+}
+footer h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  margin-bottom: 8px;
+}
+footer ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+footer ul li a:hover {
+  color: #22c55e;
+}
+footer p {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+footer .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+footer .social-icons a {
+  background-color: #1e293b;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+footer .social-icons a:hover:nth-child(1) {
+  background-color: #1877f2;
+}
+footer .social-icons a:hover:nth-child(2) {
+  background-color: #e1306c;
+}
+footer .social-icons a:hover:nth-child(3) {
+  background-color: #1da1f2;
+}
+
+.logo img {
+  margin-bottom: 10px;
+}
+
+.copy {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+.copy span {
+  color: #22c55e;
+}
+
 @media (max-width: 700px) {
   header {
     flex-direction: column;
     padding: 10px;
-    margin: 0px;
-    width: 100%;
+    margin: 10px;
+    gap: 15px;
+    justify-content: left;
   }
-  header a, header button {
-    font-size: 10px;
-  }
-  header .header-button {
-    height: 40px;
-    width: 120px;
-    margin: 0;
-    padding: 0;
+  header .header-img {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
   }
   header nav {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
   }
-  header div {
+  header nav ul {
+    flex-direction: row;
+    gap: 15px;
+    text-align: center;
+    padding-right: 25px;
+  }
+  header nav ul li {
+    font-size: 12px;
+  }
+  header nav .header-button {
+    width: 110px;
+    height: 45px;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  header div img {
     align-self: flex-start;
-    justify-content: flex-start;
-    border: 1px solid;
+    max-width: 150px;
   }
-  .hero {
+  main .hero {
     flex-direction: column;
+    margin: 50px 20px;
+    text-align: center;
+    gap: 30px;
   }
-  .how-works {
-    flex-direction: column;
+  main .hero .hero-h1 {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 15px;
   }
-  .how-works .how-worksCardsContainer {
-    flex-direction: column;
+  main .hero h4 {
+    font-size: 16px;
+    margin-bottom: 25px;
   }
-  .products-info .products-cardsContainer {
-    flex-direction: column;
+  main .hero .hero-btnContainer {
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
   }
-  .talk-about .talk-aboutCardsContainer {
+  main .hero button {
+    font-size: 14px;
+  }
+  main .hero .hero-btnGreen {
+    height: 50px;
+    width: 150px;
+  }
+  main .hero .hero-btnBlue {
+    height: 50px;
+    width: 150px;
+  }
+  main .hero img {
+    max-width: 240px;
+  }
+  main .stats {
+    height: auto;
+    padding: 30px 0;
+  }
+  main .stats .stats-components {
+    gap: 25px;
+    text-align: center;
+    justify-content: center;
+  }
+  main .stats .stats-components .green-stats {
+    font-size: 22px;
+  }
+  main .stats .stats-components .sub-stats {
+    font-size: 14px;
+  }
+  main .how-works {
+    margin: 50px 20px;
+  }
+  main .how-works .how-worksContainer {
+    align-items: center;
+  }
+  main .how-works .how-worksContainer .how-worksText {
+    align-items: center;
+    text-align: center;
+  }
+  main .how-works .how-worksContainer .how-worksText h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  main .how-works .how-worksContainer .how-worksText h3 {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  main .how-works .how-worksContainer .how-worksCardsContainer {
     flex-direction: column;
+    gap: 30px;
+  }
+  main .how-works .how-worksContainer .how-worksCards {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+  }
+  main .how-works .how-worksContainer .how-worksCards h3 {
+    font-size: 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  main .how-works .how-worksContainer .how-worksCards h4 {
+    margin-bottom: 3px;
+  }
+  main .how-works .how-worksContainer .how-worksCards .how-workTittle {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  main .how-works .how-worksContainer .how-worksCards .how-workTittleGreen {
+    flex-direction: row;
+  }
+  main .how-works .how-worksContainer .how-worksCards .how-workTittleBlue {
+    flex-direction: row;
+  }
+  main .how-works .how-worksContainer .how-worksCards .how-worksItens {
+    margin-left: 0;
+    margin-bottom: 25px;
+    gap: 3px;
+  }
+  main .products-info {
+    margin: 50px 20px;
+  }
+  main .products-info .products-container {
+    align-items: center;
+  }
+  main .products-info .products-container .products-text {
+    align-items: center;
+    text-align: center;
+  }
+  main .products-info .products-container .products-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  main .products-info .products-container .products-text h3 {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  main .products-info .products-container .products-cardsContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .products-info .products-container .products-cards {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+  main .talk-about {
+    margin: 50px 20px;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutText {
+    text-align: center;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutText h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutText h3 {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutCardsContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutCards {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    min-height: 280px;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutCards p {
+    max-width: none;
+    height: auto;
+    text-align: center;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutCards .talkabout-imgstar {
+    justify-content: center;
+    width: 100%;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutCards .talk-aboutCardsInfos {
+    justify-content: center;
+    width: 100%;
+  }
+  main .make-the-difference {
+    padding: 3rem 1rem;
+    margin-top: 3rem;
+  }
+  main .make-the-difference h2 {
+    font-size: 28px;
+  }
+  main .make-the-difference p {
+    font-size: 18px;
+    line-height: 130%;
+  }
+  main .make-the-difference .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  main .make-the-difference button {
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
