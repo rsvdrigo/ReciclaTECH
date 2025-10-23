@@ -297,10 +297,10 @@ main .products-info .products-container .products-cardsContainer .products-cards
   align-items: center;
   border-radius: 8px;
   border: 2px solid #16A34A;
-  gap: 33px;
+  gap: 28px;
   height: 436px;
   width: 299px;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 main .products-info .products-container .products-cardsContainer .products-cards h4 {
   font-family: "Inter", sans-serif;
