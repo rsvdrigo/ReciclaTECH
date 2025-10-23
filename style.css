@@ -104,10 +104,17 @@ main .hero .hero-btnGreen {
   border-color: #21C05C;
   color: #FFFFFF;
 }
+main .hero .hero-btnGreen:hover {
+  background-color: #16A34A;
+}
 main .hero .hero-btnBlue {
   border-color: #2563EB;
   color: #2563EB;
   background-color: transparent;
+}
+main .hero .hero-btnBlue:hover {
+  color: #085bc7;
+  border: 1px solid #4d8be7;
 }
 main .hero img {
   max-width: 100%;

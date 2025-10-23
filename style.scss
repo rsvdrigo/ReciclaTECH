@@ -121,12 +121,23 @@ main {
             background-color: $color-greenSecondary;
             border-color: $color-greenSecondary;
             color: #FFFFFF;
+
+            &:hover{
+                background-color: $color-greenPrimary;
+            }
         }
 
         .hero-btnBlue {
             border-color: $color-bluePrimary;
             color: $color-bluePrimary;
             background-color: transparent;
+
+            &:hover{
+                color: #085bc7;
+                border: 1px solid #4d8be7;
+                
+                
+            }
         }
 
         img {
