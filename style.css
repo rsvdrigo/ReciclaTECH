@@ -320,6 +320,7 @@ main .products-info .products-container .products-cardsContainer .products-cards
 main .talk-about {
   display: flex;
   flex-direction: column;
+  margin-bottom: 69px;
 }
 main .talk-about .talk-aboutContainer {
   display: flex;
@@ -405,4 +406,55 @@ main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards
   font-size: 14px;
   color: #6B7280;
   font-weight: 400;
+}
+main .make-the-difference {
+  background-color: #F3F5F8;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 5rem 1.5rem;
+  margin-top: 5rem;
+  width: 100%;
+  margin: auto;
+}
+main .make-the-difference .make-tittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .make-the-difference h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+main .make-the-difference p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  max-width: 600px;
+}
+main .make-the-difference button {
+  height: 44px;
+  width: 189px;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #16A34A;
+  cursor: pointer;
+}
+main .make-the-difference .start-now-button {
+  background-color: #16A34A;
+  color: #FFFFFF;
+}
+main .make-the-difference .start-now-button:hover {
+  background-color: #21C05C;
+}
+main .make-the-difference .know-more-button {
+  background-color: #FFFFFF;
+  color: #16A34A;
+}
+main .make-the-difference .know-more-button:hover {
+  color: #21C05C;
 }/*# sourceMappingURL=style.css.map */
