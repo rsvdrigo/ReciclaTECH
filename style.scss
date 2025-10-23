@@ -124,6 +124,7 @@ main {
             line-height: 100%;
             border: 1px solid;
             gap: 10px;
+            cursor: pointer;
 
 
         }
@@ -133,6 +134,9 @@ main {
             background-color: $color-greenSecondary;
             border-color: $color-greenSecondary;
             color: #FFFFFF;
+            &:hover{
+                background-color: $color-greenPrimary
+            }
         }
 
         .hero-btnBlue {
@@ -556,51 +560,113 @@ main {
             align-items: center;
 
 
-        } 
+        }
 
 
-            h2 {
-                font-family: $font-poppins;
-                font-weight: 700;
-                font-size: 40px;
+        h2 {
+            font-family: $font-poppins;
+            font-weight: 700;
+            font-size: 40px;
+
+        }
+
+        p {
+            font-family: $font-inter;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 150%;
+            max-width: 600px;
+        }
+
+        button {
+            height: 44px;
+            width: 189px;
+            border-radius: 6px;
+            font-family: $font-poppins;
+            border: 1px solid $color-greenPrimary;
+            cursor: pointer;
+
+        }
+
+        .start-now-button {
+            background-color: $color-greenPrimary;
+            color: #FFFFFF;
+
+            &:hover {
+                background-color: $color-greenSecondary;
+            }
+        }
+
+        .know-more-button {
+            background-color: #FFFFFF;
+            color: $color-greenPrimary;
+
+            &:hover {
+                color: $color-greenSecondary;
 
             }
-
-            p {
-                font-family: $font-inter;
-                font-weight: 400;
-                font-size: 25px;
-                line-height: 150%;
-                max-width: 600px;
-            }
-
-            button{
-                height: 44px;
-                width: 189px;
-                border-radius: 6px;
-                font-family: $font-poppins;
-                border: 1px solid $color-greenPrimary;
-                cursor: pointer;
-
-            }
-
-            .start-now-button{
-                background-color: $color-greenPrimary;
-                color: #FFFFFF;
-
-                &:hover{
-                    background-color: $color-greenSecondary;
-                }
-            }
-            .know-more-button{
-                background-color: #FFFFFF;
-                color: $color-greenPrimary;
-
-                &:hover{
-                    color: $color-greenSecondary;
-                    
-                }
-            }
+        }
 
     }
+}
+
+
+
+
+
+
+@media(max-width:700px) {
+    
+    header {
+        flex-direction: column;
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+          a,button{
+            font-size: 10px;
+          }
+
+          .header-button{
+            height: 40px;
+            width: 120px;
+            margin: 0;
+            padding: 0;
+          }
+          nav{
+            display: flex;
+            justify-content: space-between;
+          }
+
+        div {
+            align-self: flex-start;
+            justify-content: flex-start;
+            border: 1px solid;
+        }
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .how-works{
+        flex-direction: column;
+        .how-worksCardsContainer{
+            
+            flex-direction: column;
+        }
+    }
+
+    .products-info{
+
+        .products-cardsContainer{
+            flex-direction: column;
+        }
+    }
+
+    .talk-about{
+        .talk-aboutCardsContainer{
+            flex-direction: column;
+        }
+    }
+
 }
