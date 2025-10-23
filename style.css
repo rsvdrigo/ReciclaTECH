@@ -239,6 +239,7 @@ main .products-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 159px;
 }
 main .products-info .products-container {
   display: flex;
@@ -268,26 +269,140 @@ main .products-info .products-container .products-text h3 {
   align-items: center;
   justify-content: center;
 }
-main .products-info .products-container .products-cards {
+main .products-info .products-container .products-cardsContainer {
+  display: flex;
+  gap: 49px;
+}
+main .products-info .products-container .products-cardsContainer .products-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
   border: 2px solid #16A34A;
-  gap: 20px;
+  gap: 33px;
+  height: 436px;
+  width: 299px;
 }
-main .products-info .products-container .products-cards h4 {
+main .products-info .products-container .products-cardsContainer .products-cards h4 {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 100%;
   color: #09090B;
 }
-main .products-info .products-container .products-cards p {
+main .products-info .products-container .products-cardsContainer .products-cards p {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 100%;
-  max-width: 200px;
   color: #4B5563;
+  max-width: 220px;
+  text-align: center;
+}
+main .products-info .products-container .products-cardsContainer .products-cards .p-fone {
+  max-width: 180px;
+}
+main .products-info .products-container .products-cardsContainer .products-cards button {
+  height: 37px;
+  width: 150px;
+  border: 1px solid #21C05C;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #FFFFFF;
+  background-color: #16A34A;
+}
+main .products-info .products-container .products-cardsContainer .products-cards button:hover {
+  background-color: #21C05C;
+}
+main .talk-about {
+  display: flex;
+  flex-direction: column;
+}
+main .talk-about .talk-aboutContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .talk-about .talk-aboutContainer .talk-aboutText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .talk-about .talk-aboutContainer .talk-aboutText h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 22px;
+}
+main .talk-about .talk-aboutContainer .talk-aboutText h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .talk-about .talk-aboutContainer .talk-aboutCardsContainer {
+  display: flex;
+  gap: 50px;
+}
+main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 280px;
+  width: 350px;
+  border: 1px solid #9CA3AF;
+  border-left: 4px solid #9CA3AF;
+  border-radius: 8px;
+  gap: 25px;
+  padding: 20px;
+}
+main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talk-img {
+  height: 40px;
+  width: 40px;
+}
+main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talk-pRegular {
+  height: 210px;
+}
+main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4B5563;
+  max-width: 230px;
+  height: 250px;
+  padding-left: 40px;
+}
+main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talkabout-imgstar {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talk-aboutCardsInfos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+  gap: 10px;
+}
+main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talk-aboutCardsInfos .talk-aboutcardsTexts h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #09090B;
+  font-weight: 400;
+}
+main .talk-about .talk-aboutContainer .talk-aboutCardsContainer .talk-aboutCards .talk-aboutCardsInfos .talk-aboutcardsTexts h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #6B7280;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
