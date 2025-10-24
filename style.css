@@ -564,15 +564,6 @@ footer .social-icons a {
   font-size: 16px;
   transition: background-color 0.3s;
 }
-footer .social-icons a:hover:nth-child(1) {
-  background-color: #1877f2;
-}
-footer .social-icons a:hover:nth-child(2) {
-  background-color: #e1306c;
-}
-footer .social-icons a:hover:nth-child(3) {
-  background-color: #1da1f2;
-}
 
 .logo img {
   margin-bottom: 10px;
@@ -985,10 +976,10 @@ footer .social-icons a:hover:nth-child(3) {
     max-width: 500px;
   }
   footer .container {
-    gap: 100px;
+    gap: 10px;
     margin-left: 50px;
   }
   footer .tags-container {
-    gap: 100px;
+    gap: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
