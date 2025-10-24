@@ -1061,3 +1061,183 @@ footer {
         }
     }
 }
+
+@media (min-width: 701px) and (max-width: 1024px) {
+    header {
+        margin: 1.5rem 1rem;
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        
+        nav {
+            gap: 20px;
+            
+            ul {
+                gap: 20px;
+                
+                li {
+                    font-size: 14px;
+                }
+            }
+            
+            .header-button {
+                width: 150px;
+                height: 50px;
+                font-size: 13px;
+            }
+        }
+    }
+    
+    main {
+        .hero {
+            margin: 80px 20px;
+            gap: 30px;
+            
+            h1 {
+                font-size: 40px;
+                max-width: 500px;
+            }
+            
+            h4 {
+                font-size: 18px;
+                max-width: 500px;
+            }
+            
+            .hero-btnContainer {
+                gap: 20px;
+            }
+            
+            button {
+                height: 55px;
+                width: 170px;
+                font-size: 14px;
+            }
+            
+            img {
+                max-width: 350px;
+            }
+        }
+        
+        .stats {
+            height: 150px;
+            
+            .stats-components {
+                min-width: 90%;
+                
+                .green-stats {
+                    font-size: 32px;
+                }
+                
+                .sub-stats {
+                    font-size: 14px;
+                }
+            }
+        }
+        
+        .how-works {
+            margin: 80px 20px;
+            
+            .how-worksContainer {
+                .how-worksText {
+                    h2 {
+                        font-size: 32px;
+                    }
+                    
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 60px;
+                    }
+                }
+                
+                .how-worksCardsContainer {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+                }
+                
+                .how-worksCards {
+                    width: 100%;
+                    max-width: 600px;
+                    height: auto;
+                    padding: 30px;
+                }
+            }
+        }
+        
+        .products-info {
+            margin: 80px 20px;
+            
+            .products-container {
+                .products-text {
+                    h2 {
+                        font-size: 32px;
+                    }
+                    
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 60px;
+                    }
+                }
+                
+                .products-cardsContainer {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 30px;
+                }
+                
+                .products-cards {
+                    width: 280px;
+                }
+            }
+        }
+        
+        .talk-about {
+            margin: 80px 20px;
+            
+            .talk-aboutContainer {
+                .talk-aboutText {
+                    h2 {
+                        font-size: 32px;
+                    }
+                    
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 60px;
+                    }
+                }
+                
+                .talk-aboutCardsContainer {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 30px;
+                }
+                
+                .talk-aboutCards {
+                    width: 300px;
+                }
+            }
+        }
+        
+        .make-the-difference {
+            padding: 4rem 1rem;
+            
+            h2 {
+                font-size: 32px;
+            }
+            
+            p {
+                font-size: 20px;
+                max-width: 500px;
+            }
+        }
+    }
+    
+    footer {
+        .container {
+            gap: 100px;
+            margin-left: 50px;
+        }
+        
+        .tags-container {
+            gap: 100px;
+        }
+    }
+}

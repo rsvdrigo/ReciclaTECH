@@ -862,4 +862,133 @@ footer .social-icons a:hover:nth-child(3) {
   footer .copy p {
     font-size: 8px;
   }
+}
+@media (min-width: 701px) and (max-width: 1024px) {
+  header {
+    margin: 1.5rem 1rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+  }
+  header nav {
+    gap: 20px;
+  }
+  header nav ul {
+    gap: 20px;
+  }
+  header nav ul li {
+    font-size: 14px;
+  }
+  header nav .header-button {
+    width: 150px;
+    height: 50px;
+    font-size: 13px;
+  }
+  main .hero {
+    margin: 80px 20px;
+    gap: 30px;
+  }
+  main .hero h1 {
+    font-size: 40px;
+    max-width: 500px;
+  }
+  main .hero h4 {
+    font-size: 18px;
+    max-width: 500px;
+  }
+  main .hero .hero-btnContainer {
+    gap: 20px;
+  }
+  main .hero button {
+    height: 55px;
+    width: 170px;
+    font-size: 14px;
+  }
+  main .hero img {
+    max-width: 350px;
+  }
+  main .stats {
+    height: 150px;
+  }
+  main .stats .stats-components {
+    min-width: 90%;
+  }
+  main .stats .stats-components .green-stats {
+    font-size: 32px;
+  }
+  main .stats .stats-components .sub-stats {
+    font-size: 14px;
+  }
+  main .how-works {
+    margin: 80px 20px;
+  }
+  main .how-works .how-worksContainer .how-worksText h2 {
+    font-size: 32px;
+  }
+  main .how-works .how-worksContainer .how-worksText h3 {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  main .how-works .how-worksContainer .how-worksCardsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  main .how-works .how-worksContainer .how-worksCards {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 30px;
+  }
+  main .products-info {
+    margin: 80px 20px;
+  }
+  main .products-info .products-container .products-text h2 {
+    font-size: 32px;
+  }
+  main .products-info .products-container .products-text h3 {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  main .products-info .products-container .products-cardsContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  main .products-info .products-container .products-cards {
+    width: 280px;
+  }
+  main .talk-about {
+    margin: 80px 20px;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutText h2 {
+    font-size: 32px;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutText h3 {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutCardsContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  main .talk-about .talk-aboutContainer .talk-aboutCards {
+    width: 300px;
+  }
+  main .make-the-difference {
+    padding: 4rem 1rem;
+  }
+  main .make-the-difference h2 {
+    font-size: 32px;
+  }
+  main .make-the-difference p {
+    font-size: 20px;
+    max-width: 500px;
+  }
+  footer .container {
+    gap: 100px;
+    margin-left: 50px;
+  }
+  footer .tags-container {
+    gap: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */
