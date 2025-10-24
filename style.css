@@ -497,11 +497,14 @@ footer {
 }
 footer .container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 40px;
+  gap: 250px;
   border-bottom: 1px solid #1e293b;
   padding-bottom: 30px;
+  margin-left: 150px;
+}
+footer .tags-container {
+  display: flex;
+  gap: 250px;
 }
 footer .tags {
   margin-left: 22px;
@@ -809,5 +812,54 @@ footer .social-icons a:hover:nth-child(3) {
     width: 135px;
     height: 35px;
     font-size: 12px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  footer .tags-logo {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 7px;
+  }
+  footer .tags-logo img {
+    height: 20px;
+    width: 20%;
+  }
+  footer .tags-logo p {
+    font-size: 8px;
+    max-width: 100%;
+  }
+  footer .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+    margin-left: 10px;
+  }
+  footer .tags-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  footer .tags h3 {
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+  footer .tags ul li {
+    margin-bottom: 0px;
+  }
+  footer .tags ul a {
+    font-size: 8px;
+  }
+  footer .tags .social-text {
+    font-size: 8px;
+  }
+  footer a img {
+    height: auto;
+    width: 300px;
+  }
+  footer .copy p {
+    font-size: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
