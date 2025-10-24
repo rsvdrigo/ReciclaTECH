@@ -34,7 +34,7 @@ Esta plataforma foi desenvolvida como solução para este desafio, criando um ca
 |---------|------|
 | 🌐 **Site Online** | [https://recicla-tech-nu.vercel.app/](https://recicla-tech-nu.vercel.app/) |
 | 💻 **Repositório** | [https://github.com/rsvdrigo/ReciclaTECH](https://github.com/rsvdrigo/ReciclaTECH) |
-| 👨‍💻 **LinkedIn** | [https://linkedin.com/rosdrigo](https://linkedin.com/rosdrigo) |
+| 👨‍💻 **LinkedIn** | [https://www.linkedin.com/in/rosdrigo/](https://www.linkedin.com/in/rosdrigo/) |
 
 ## 🎯 Objetivos Alcançados
 
